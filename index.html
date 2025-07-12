@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File System Navigator</title>
+    <link rel="stylesheet" href="/style.css">
+    <base href="/">
+</head>
+<body>
+    <div class="container">
+        <h1>📂 File System Navigator</h1>
+        
+        <div class="controls">
+            <input type="text" id="path-input" placeholder="Enter path (e.g., ~/Documents or C:\Users)">
+            <input type="number" id="depth-input" min="1" max="10" value="3">
+            <label>
+                <input type="checkbox" id="hidden-checkbox">
+                Show Hidden Files
+            </label>
+            <button id="refresh-btn">🔃 Refresh</button>
+        </div>
+        
+        <div id="tree-container"></div>
+        <div id="error-container" class="error"></div>
+    </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
